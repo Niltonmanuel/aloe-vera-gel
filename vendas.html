@@ -16,6 +16,7 @@
         .btn-buy:hover { background: #15803d; transform: scale(1.05); }
         .btn-wa { border: 1px solid #25d366; color: #25d366; transition: 0.3s; }
         .btn-wa:hover { background: #25d366; color: black; }
+        .price-tag { font-size: 4rem; font-weight: 800; color: #16a34a; line-height: 1; }
     </style>
 </head>
 <body class="p-4 md:p-10">
@@ -29,63 +30,71 @@
         </div>
 
         <div class="flex flex-col md:flex-row gap-4 justify-center px-4">
-            <a href="passo-a-passo.html" class="btn-buy px-8 py-4 rounded-full font-bold uppercase text-sm md:text-base text-center">Comprar agora na loja</a>
+            <a href="#oferta" class="btn-buy px-8 py-4 rounded-full font-bold uppercase text-sm md:text-base text-center">Quero Garantir o Meu</a>
             <a href="https://wa.me/258860797397?text=Olá,%20quero%20comprar%20o%20Aloe%20Vera%20Gel%20e%20tenho%20algumas%20dúvidas." class="btn-wa px-8 py-4 rounded-full font-bold uppercase text-sm md:text-base text-center text-green-500">Falar com Consultor</a>
         </div>
     </section>
 
-    <section class="max-w-5xl mx-auto py-12 md:py-20">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="glass p-6 text-center">
-                <div class="text-3xl mb-4">🔬</div>
-                <h3 class="font-bold text-lg mb-2 text-green-400">Ciência Europeia</h3>
-                <p class="text-sm text-gray-400">Testado em clínicas de elite para garantir zero irritação e máxima absorção.</p>
+    <section id="oferta" class="max-w-4xl mx-auto py-16 px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Tudo o que você leva hoje:</h2>
+        
+        <div class="space-y-4">
+            <div class="glass p-6 flex justify-between items-center border-l-4 border-green-500">
+                <div>
+                    <h4 class="font-bold text-lg md:text-xl uppercase">1x Aloe Vera Gel (Nutriance)</h4>
+                    <p class="text-sm text-gray-400">Pureza Europeia para regeneração total.</p>
+                </div>
+                <span class="font-bold text-gray-300">1.360 MT</span>
             </div>
-            <div class="glass p-6 text-center">
-                <div class="text-3xl mb-4">🌿</div>
-                <h3 class="font-bold text-lg mb-2 text-green-400">Poder Botânico</h3>
-                <p class="text-sm text-gray-400">Calêndula, Camomila e Tília trabalham juntos para regenerar o tecido celular.</p>
+
+            <div class="glass p-6 flex justify-between items-center border-l-4 border-yellow-500">
+                <div>
+                    <h4 class="font-bold text-lg md:text-xl uppercase">Guia Digital "Pele Blindada"</h4>
+                    <p class="text-sm text-gray-400">Protocolos exclusivos de uso clínico.</p>
+                </div>
+                <span class="font-bold text-gray-300">5.240 MT</span>
             </div>
-            <div class="glass p-6 text-center">
-                <div class="text-3xl mb-4">💧</div>
-                <h3 class="font-bold text-lg mb-2 text-green-400">Barreira Hídrica</h3>
-                <p class="text-sm text-gray-400">Solúvel em água para manter o pH e a umidade natural por até 24h.</p>
+
+            <div class="glass p-6 flex justify-between items-center border-l-4 border-yellow-500">
+                <div>
+                    <h4 class="font-bold text-lg md:text-xl uppercase">Consultoria Personalizada VIP</h4>
+                    <p class="text-sm text-gray-400">Acesso direto via WhatsApp por 30 dias.</p>
+                </div>
+                <span class="font-bold text-gray-300">7.000 MT</span>
+            </div>
+            
+            <div class="p-6 flex justify-between items-center bg-white/5 rounded-2xl border-2 border-dashed border-gray-600">
+                <h4 class="font-bold text-xl uppercase tracking-widest text-gray-300">Valor Total Entregue:</h4>
+                <span class="font-bold text-2xl line-through text-red-500">13.600 MT</span>
             </div>
         </div>
     </section>
 
-    <section class="bg-zinc-900/50 py-16 -mx-4 md:-mx-10 px-6">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-2xl md:text-3xl font-bold text-center mb-10 uppercase tracking-widest">O que dizem os especialistas</h2>
-            <div class="space-y-8">
-                <blockquote class="border-l-4 border-green-500 pl-6 italic text-base md:text-lg text-gray-300">
-                    "A pureza do Aloe Vera utilizado nesta fórmula é o que a diferencia de produtos de farmácia. O processo de extração a frio preserva as enzimas que realmente curam a pele."
-                    <footer class="mt-2 text-green-500 font-bold text-sm">— Revisão Técnica de Biologia Cutânea</footer>
-                </blockquote>
-                <blockquote class="border-l-4 border-green-500 pl-6 italic text-base md:text-lg text-gray-300">
-                    "Ideal para pós-barba, queimaduras solares leves e irritações por vento frio. É um item indispensável para quem vive em climas variáveis."
-                    <footer class="mt-2 text-green-500 font-bold text-sm">— Guia de Cuidados Pessoais Premium</footer>
-                </blockquote>
-            </div>
-        </div>
-    </section>
-
-    <section id="preço" class="max-w-3xl mx-auto py-16 md:py-24 text-center px-4">
-        <div class="glass p-6 md:p-12 border-2 border-green-500/30">
-            <div class="flex flex-col items-center">
-                <span class="bg-red-600 text-white px-4 py-1 rounded-full text-[10px] md:text-xs font-bold uppercase mb-6">Estoque Limitado em Moçambique</span>
-            </div>
+    <section class="max-w-3xl mx-auto py-12 md:py-20 text-center px-4">
+        <div class="glass p-8 md:p-12 border-2 border-green-500/30">
+            <h3 class="text-2xl font-bold mb-6 text-gray-300 uppercase tracking-tighter">Você não vai pagar nem metade disso...</h3>
             
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">Garanta o seu Aloe Vera Gel</h2>
-            <p class="text-gray-400 mb-8 font-light italic text-sm md:text-base">Pela alta demanda e pureza dos ingredientes, nossos lotes são limitados.</p>
+            <p class="text-gray-400 uppercase tracking-widest text-sm mb-4">Aproveite hoje por apenas:</p>
             
-            <div class="text-3xl md:text-5xl font-extrabold mb-10 leading-tight">
-                <span class="gradient-gold">Qualidade Incomparável</span>
-            </div>
+            <div class="price-tag mb-4">1.360 <span class="text-2xl uppercase">MT</span></div>
+            
+            <p class="text-gray-400 mb-10 text-sm md:text-base font-light italic px-4">
+                "Minha missão é levar saúde e prosperidade a Moçambique. Por isso, ofereço este valor exclusivo enquanto durar o estoque."
+            </p>
 
             <div class="space-y-4 max-w-sm mx-auto">
-                <a href="passo-a-passo.html" class="btn-buy block w-full py-5 rounded-xl text-lg md:text-xl font-bold shadow-lg shadow-green-600/20 text-white">🛒 COMPRAR NA LOJA OFICIAL</a>
-                <a href="https://wa.me/258860797397?text=Olá,%20quero%20comprar%20o%20Aloe%20Vera%20Gel%20e%20tenho%20algumas%20dúvidas." class="btn-wa block w-full py-5 rounded-xl text-base md:text-lg font-bold uppercase tracking-tight">💬 Dificuldades no Site? WhatsApp</a>
+                <a href="passo-a-passo.html" class="btn-buy block w-full py-6 rounded-2xl text-xl md:text-2xl font-bold shadow-lg shadow-green-600/30 text-white uppercase animate-pulse">
+                    🛒 Sim! Eu Quero agora
+                </a>
+                <a href="https://wa.me/258860797397?text=Olá,%20quero%20aproveitar%20a%20oferta%20do%20Aloe%20Vera%20Gel." class="btn-wa block w-full py-5 rounded-2xl text-base md:text-lg font-bold uppercase tracking-tight">
+                    💬 Falar com Nilton no WhatsApp
+                </a>
+            </div>
+            
+            <div class="mt-10 flex flex-wrap justify-center gap-4 opacity-50 grayscale">
+                <span class="text-[10px] border border-gray-500 px-2 py-1 rounded">M-PESA SEGURO</span>
+                <span class="text-[10px] border border-gray-500 px-2 py-1 rounded">PRODUTO ORIGINAL</span>
+                <span class="text-[10px] border border-gray-500 px-2 py-1 rounded">ENVIO IMEDIATO</span>
             </div>
         </div>
     </section>
