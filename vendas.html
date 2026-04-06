@@ -17,6 +17,9 @@
         .btn-wa { border: 1px solid #25d366; color: #25d366; transition: 0.3s; }
         .btn-wa:hover { background: #25d366; color: black; }
         .price-tag { font-size: 4rem; font-weight: 800; color: #16a34a; line-height: 1; }
+        
+        /* Classe para esconder os elementos inicialmente */
+        .delayed-content { display: none; }
     </style>
 </head>
 <body class="p-4 md:p-10">
@@ -26,83 +29,86 @@
         <p class="text-lg md:text-xl text-gray-400 mb-8 px-4">O alívio imediato que você sente na alma ao ver sua pele saudável novamente.</p>
         
         <div class="vsl-container mb-10 shadow-2xl shadow-green-900/20">
-            <iframe src="https://www.youtube.com/embed/SEU_ID_DO_VIDEO" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/SEU_ID_DO_VIDEO?autoplay=1&rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
+    </section>
 
-        <div class="flex flex-col md:flex-row gap-4 justify-center px-4">
+    <div id="delay-container" class="delayed-content">
+        
+        <div class="flex flex-col md:flex-row gap-4 justify-center px-4 mb-16">
             <a href="#oferta" class="btn-buy px-8 py-4 rounded-full font-bold uppercase text-sm md:text-base text-center">Quero Garantir o Meu</a>
             <a href="https://wa.me/258860797397?text=Olá,%20quero%20comprar%20o%20Aloe%20Vera%20Gel%20e%20tenho%20algumas%20dúvidas." class="btn-wa px-8 py-4 rounded-full font-bold uppercase text-sm md:text-base text-center text-green-500">Falar com Consultor</a>
         </div>
-    </section>
 
-    <section id="oferta" class="max-w-4xl mx-auto py-16 px-4">
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Tudo o que você leva hoje:</h2>
-        
-        <div class="space-y-4">
-            <div class="glass p-6 flex justify-between items-center border-l-4 border-green-500">
-                <div>
-                    <h4 class="font-bold text-lg md:text-xl uppercase">1x Aloe Vera Gel (Nutriance)</h4>
-                    <p class="text-sm text-gray-400">Pureza Europeia para regeneração total.</p>
+        <section id="oferta" class="max-w-4xl mx-auto py-16 px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 uppercase tracking-tight">Sua Oferta Exclusiva de Hoje:</h2>
+            
+            <div class="space-y-4">
+                <div class="glass p-6 flex justify-between items-center border-l-4 border-green-500">
+                    <div>
+                        <h4 class="font-bold text-lg md:text-xl uppercase">1x Aloe Vera Gel (Nutriance)</h4>
+                        <p class="text-sm text-gray-400">Pureza Europeia para regeneração total.</p>
+                    </div>
+                    <span class="font-bold text-gray-300 text-right ml-4">1.360 MT</span>
                 </div>
-                <span class="font-bold text-gray-300">1.360 MT</span>
-            </div>
 
-            <div class="glass p-6 flex justify-between items-center border-l-4 border-yellow-500">
-                <div>
-                    <h4 class="font-bold text-lg md:text-xl uppercase">Guia Digital "Pele Blindada"</h4>
-                    <p class="text-sm text-gray-400">Protocolos exclusivos de uso clínico.</p>
+                <div class="glass p-6 flex justify-between items-center border-l-4 border-yellow-500">
+                    <div>
+                        <h4 class="font-bold text-lg md:text-xl uppercase text-yellow-500">Guia Digital "Pele Blindada"</h4>
+                        <p class="text-sm text-gray-400">Protocolos exclusivos de uso clínico.</p>
+                    </div>
+                    <span class="font-bold text-gray-300 text-right ml-4">5.240 MT</span>
                 </div>
-                <span class="font-bold text-gray-300">5.240 MT</span>
-            </div>
 
-            <div class="glass p-6 flex justify-between items-center border-l-4 border-yellow-500">
-                <div>
-                    <h4 class="font-bold text-lg md:text-xl uppercase">Consultoria Personalizada VIP</h4>
-                    <p class="text-sm text-gray-400">Acesso direto via WhatsApp por 30 dias.</p>
+                <div class="glass p-6 flex justify-between items-center border-l-4 border-yellow-500">
+                    <div>
+                        <h4 class="font-bold text-lg md:text-xl uppercase text-yellow-500">Consultoria Personalizada VIP</h4>
+                        <p class="text-sm text-gray-400">Acesso direto via WhatsApp por 30 dias.</p>
+                    </div>
+                    <span class="font-bold text-gray-300 text-right ml-4">7.000 MT</span>
                 </div>
-                <span class="font-bold text-gray-300">7.000 MT</span>
+                
+                <div class="p-6 flex justify-between items-center bg-white/5 rounded-2xl border-2 border-dashed border-gray-600">
+                    <h4 class="font-bold text-xl uppercase tracking-widest text-gray-300">Valor Total Entregue:</h4>
+                    <span class="font-bold text-2xl line-through text-red-500 ml-4">13.600 MT</span>
+                </div>
             </div>
-            
-            <div class="p-6 flex justify-between items-center bg-white/5 rounded-2xl border-2 border-dashed border-gray-600">
-                <h4 class="font-bold text-xl uppercase tracking-widest text-gray-300">Valor Total Entregue:</h4>
-                <span class="font-bold text-2xl line-through text-red-500">13.600 MT</span>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="max-w-3xl mx-auto py-12 md:py-20 text-center px-4">
-        <div class="glass p-8 md:p-12 border-2 border-green-500/30">
-            <h3 class="text-2xl font-bold mb-6 text-gray-300 uppercase tracking-tighter">Você não vai pagar nem metade disso...</h3>
-            
-            <p class="text-gray-400 uppercase tracking-widest text-sm mb-4">Aproveite hoje por apenas:</p>
-            
-            <div class="price-tag mb-4">1.360 <span class="text-2xl uppercase">MT</span></div>
-            
-            <p class="text-gray-400 mb-10 text-sm md:text-base font-light italic px-4">
-                "Minha missão é levar saúde e prosperidade a Moçambique. Por isso, ofereço este valor exclusivo enquanto durar o estoque."
-            </p>
+        <section class="max-w-3xl mx-auto py-12 md:py-20 text-center px-4">
+            <div class="glass p-8 md:p-12 border-2 border-green-500/30">
+                <h3 class="text-2xl font-bold mb-6 text-gray-300 uppercase tracking-tighter">Você não vai pagar nem metade disso...</h3>
+                <p class="text-gray-400 uppercase tracking-widest text-sm mb-4">Aproveite hoje por apenas:</p>
+                <div class="price-tag mb-4 italic">1.360 <span class="text-2xl uppercase">MT</span></div>
+                
+                <p class="text-gray-400 mb-10 text-sm md:text-base font-light italic px-4">
+                    "Minha missão é levar saúde e prosperidade a Moçambique. Por isso, ofereço este valor exclusivo enquanto durar o estoque."
+                </p>
 
-            <div class="space-y-4 max-w-sm mx-auto">
-                <a href="passo-a-passo.html" class="btn-buy block w-full py-6 rounded-2xl text-xl md:text-2xl font-bold shadow-lg shadow-green-600/30 text-white uppercase animate-pulse">
-                    🛒 Sim! Eu Quero agora
-                </a>
-                <a href="https://wa.me/258860797397?text=Olá,%20quero%20aproveitar%20a%20oferta%20do%20Aloe%20Vera%20Gel." class="btn-wa block w-full py-5 rounded-2xl text-base md:text-lg font-bold uppercase tracking-tight">
-                    💬 Falar com Nilton no WhatsApp
-                </a>
+                <div class="space-y-4 max-w-sm mx-auto">
+                    <a href="passo-a-passo.html" class="btn-buy block w-full py-6 rounded-2xl text-xl md:text-2xl font-bold shadow-lg shadow-green-600/30 text-white uppercase animate-pulse">
+                        🛒 Sim! Quero agora
+                    </a>
+                </div>
             </div>
-            
-            <div class="mt-10 flex flex-wrap justify-center gap-4 opacity-50 grayscale">
-                <span class="text-[10px] border border-gray-500 px-2 py-1 rounded">M-PESA SEGURO</span>
-                <span class="text-[10px] border border-gray-500 px-2 py-1 rounded">PRODUTO ORIGINAL</span>
-                <span class="text-[10px] border border-gray-500 px-2 py-1 rounded">ENVIO IMEDIATO</span>
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
     <footer class="mt-10 border-t border-white/10 pt-10 pb-20 text-center text-gray-500 text-[10px] md:text-xs px-4">
         <p>Nilton Manuel – Distribuidor Independente</p>
         <p class="mt-2">Todos os direitos reservados © 2026. Este produto não substitui aconselhamento médico.</p>
     </footer>
+
+    <script>
+        // CONFIGURAÇÃO DO TEMPO (em segundos)
+        // Se o seu vídeo revela o preço aos 20 minutos, coloque 1200.
+        // Para testes rápidos, coloque 5 ou 10.
+        const SECONDS_TO_DELAY = 1200; 
+
+        setTimeout(function() {
+            document.getElementById('delay-container').style.display = 'block';
+        }, SECONDS_TO_DELAY * 1000);
+    </script>
 
 </body>
 </html>
